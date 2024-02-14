@@ -1,9 +1,10 @@
+import 'package:dashboard/extension/context_extension.dart';
 import 'package:dashboard/utils/size_config.dart';
 import 'package:flutter/material.dart';
 abstract class AppStyles {
   static TextStyle styleRegular16(context) {
     return TextStyle(
-      color: const Color(0xFF064060),
+      color: context.colorScheme.secondary,
       fontSize: _getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
@@ -11,7 +12,7 @@ abstract class AppStyles {
   }
   static TextStyle styleBold16(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF4EB7F2),
+      color: context.colorScheme.primary,
       fontSize: _getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w700,
@@ -19,7 +20,7 @@ abstract class AppStyles {
   }
   static TextStyle styleMedium16(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
+      color: context.colorScheme.secondary,
       fontSize: _getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500,
@@ -35,7 +36,7 @@ abstract class AppStyles {
   }
   static TextStyle styleSemiBold16(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
+      color: context.colorScheme.secondary,
       fontSize: _getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
@@ -43,7 +44,7 @@ abstract class AppStyles {
   }
   static TextStyle styleSemiBold20(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
+      color: context.colorScheme.secondary,
       fontSize: _getResponsiveFontSize(context, fontSize: 20),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
@@ -59,7 +60,7 @@ abstract class AppStyles {
   }
   static TextStyle styleSemiBold24(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF4EB7F2),
+      color: context.colorScheme.primary,
       fontSize: _getResponsiveFontSize(context, fontSize: 24),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,

@@ -9,7 +9,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: context.theme.colorScheme.background,
+      backgroundColor: context.colorScheme.background,
       body: AdaptiveLayout(
         mobileLayout: (context) => const MobileLayout(),
         tabletLayout: (context) => const TabletLayout(),
