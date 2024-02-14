@@ -1,6 +1,7 @@
+import 'package:dashboard/widgets/all_expenses_widgets/all_expenses.dart';
 import 'package:dashboard/widgets/custom_drawer_widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
-class DesktopLayout extends StatelessWidget{
+class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
   @override
   Widget build(BuildContext context) {
@@ -10,9 +11,20 @@ class DesktopLayout extends StatelessWidget{
         SizedBox(
           width: 32,
         ),
+        Expanded(
+          flex: 2,
+            child: Column(
+          children: [
+            SizedBox(
+              height: 40,
+            ),
+            AllExpenses(),
+          ],
+        )),
+        SizedBox(
+          width: 32,
+        ),
       ],
     );
   }
 }
-
-

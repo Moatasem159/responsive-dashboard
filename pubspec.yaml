@@ -16,12 +16,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-     - assets/images/
+    - assets/images/
+    - lib/widgets/
+    - lib/widgets/layouts/
+    - lib/widgets/custom_drawer_widgets/
 flutter_assets_generator:
   output_dir: utils
   named_with_parent: false
   output_filename: app_assets
-  path_ignore: [assets/fonts]
+  path_ignore: [assets/fonts,lib]
   fonts:
     - family: Montserrat
       fonts:
