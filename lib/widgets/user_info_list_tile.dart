@@ -1,8 +1,8 @@
+import 'package:dashboard/extension/context_extension.dart';
 import 'package:dashboard/models/user_info_model.dart';
 import 'package:dashboard/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 class UserInfoListTile extends StatelessWidget {
   final UserInfoModel user;
   const UserInfoListTile({super.key, required this.user});
@@ -10,7 +10,7 @@ class UserInfoListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0,
-      color: const Color(0xFFFAFAFA),
+      color:context.theme.colorScheme.onBackground,
       child: Center(
         child: ListTile(
           leading:SvgPicture.asset(user.image),

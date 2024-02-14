@@ -1,3 +1,4 @@
+import 'package:dashboard/extension/context_extension.dart';
 import 'package:dashboard/models/drawer_item_model.dart';
 import 'package:dashboard/models/user_info_model.dart';
 import 'package:dashboard/utils/app_assets.dart';
@@ -11,17 +12,15 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.sizeOf(context).width * .7,
-      color: const Color.fromRGBO(255, 255, 255, 1),
+      color: context.theme.colorScheme.onBackground,
       child: const CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: Expanded(
-              child: UserInfoListTile(
-                user: UserInfoModel(
-                  image: Assets.avatar3,
-                  title: "Lekan Okeowo",
-                  subTitle: "demo@gmail.com",
-                ),
+            child: UserInfoListTile(
+              user: UserInfoModel(
+                image: Assets.avatar3,
+                title: "Lekan Okeowo",
+                subTitle: "demo@gmail.com",
               ),
             ),
           ),
