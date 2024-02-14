@@ -2,7 +2,7 @@ import 'package:dashboard/extension/context_extension.dart';
 import 'package:dashboard/utils/size_config.dart';
 import 'package:flutter/material.dart';
 abstract class AppStyles {
-  static TextStyle styleRegular16(context) {
+  static TextStyle styleRegular16(BuildContext context) {
     return TextStyle(
       color: context.colorScheme.secondary,
       fontSize: _getResponsiveFontSize(context, fontSize: 16),
