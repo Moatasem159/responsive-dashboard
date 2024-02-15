@@ -14,7 +14,7 @@ class DesktopLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 3,
+          flex: 4,
           child: CustomScrollView(
             slivers: [
               SliverFillRemaining(
@@ -31,13 +31,16 @@ class DesktopLayout extends StatelessWidget {
                     SizedBox(
                       width: 24,
                     ),
-                    Expanded(child: Column(
-                      children: [
-                        MyCardsAndTransactionHistorySection(),
-                        SizedBox(height: 24,),
-                        Expanded(child: IncomeSection())
-
-                      ],
+                    Expanded(child: Padding(
+                      padding: EdgeInsets.only(top: 40,right: 24),
+                      child: Column(
+                        children: [
+                          MyCardsAndTransactionHistorySection(),
+                          SizedBox(height: 24,),
+                          Expanded(child: IncomeSection()),
+                          SizedBox(height: 24,),
+                        ],
+                      ),
                     )),
                   ],
                 ),

@@ -1,6 +1,9 @@
-part of'all_expenses_header.dart';
-class _RangeOptions extends StatelessWidget {
-  const _RangeOptions();
+import 'package:dashboard/extension/context_extension.dart';
+import 'package:dashboard/utils/app_text_styles.dart';
+import 'package:flutter/material.dart';
+
+class RangeOptions extends StatelessWidget {
+  const RangeOptions({super.key});
   @override
   Widget build(BuildContext context) {
     return Container(

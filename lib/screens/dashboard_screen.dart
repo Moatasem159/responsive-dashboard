@@ -21,8 +21,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
       key: scaffoldKey,
       appBar:context.width < SizeConfig.tablet
           ? AppBar(
-        elevation: 0,
-        backgroundColor: const Color(0xFFFAFAFA),
         leading: IconButton(
             onPressed: () {
               scaffoldKey.currentState!.openDrawer();

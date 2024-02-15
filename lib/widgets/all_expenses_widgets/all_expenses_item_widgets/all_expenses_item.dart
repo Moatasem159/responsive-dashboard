@@ -12,7 +12,7 @@ class AllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return isSelected
-        ? _ActiveAllExpensesItem(itemModel,isSelected)
-        : _InActiveAllExpensesItem(itemModel,isSelected);
+        ? _ActiveAllExpensesItem(itemModel)
+        : _InActiveAllExpensesItem(itemModel);
   }
 }

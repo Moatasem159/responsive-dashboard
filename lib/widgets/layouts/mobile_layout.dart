@@ -7,18 +7,21 @@ class MobileLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-      child: Column(
-        children: [
-          AllExpensesAndQuickInvoiceSection(),
-          SizedBox(
-            height: 24,
-          ),
-          MyCardsAndTransactionHistorySection(),
-          SizedBox(
-            height: 24,
-          ),
-          IncomeSection(),
-        ],
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            AllExpensesAndQuickInvoiceSection(),
+            SizedBox(
+              height: 24,
+            ),
+            MyCardsAndTransactionHistorySection(),
+            SizedBox(
+              height: 24,
+            ),
+            IncomeSection(),
+          ],
+        ),
       ),
     );
   }

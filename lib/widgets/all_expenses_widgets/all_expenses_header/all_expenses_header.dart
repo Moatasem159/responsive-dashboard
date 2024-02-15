@@ -1,7 +1,6 @@
-import 'package:dashboard/extension/context_extension.dart';
 import 'package:dashboard/utils/app_text_styles.dart';
+import 'package:dashboard/widgets/range_options.dart';
 import 'package:flutter/material.dart';
-part 'range_options.dart';
 class AllExpensesHeader extends StatelessWidget {
   const AllExpensesHeader({super.key});
   @override
@@ -13,7 +12,7 @@ class AllExpensesHeader extends StatelessWidget {
           style: AppStyles.styleSemiBold20(context),
         ),
         const Spacer(),
-        const _RangeOptions(),
+        const RangeOptions(),
       ],
     );
   }

@@ -13,6 +13,7 @@ class CustomDrawer extends StatelessWidget {
     return Container(
       width: MediaQuery.sizeOf(context).width * .7,
       color: context.colorScheme.onBackground,
+      padding: const EdgeInsets.only(top: 5,right: 10,left: 10),
       child: const CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
@@ -52,7 +53,7 @@ class CustomDrawer extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 48,
+                  height:32,
                 )
               ],
             ),

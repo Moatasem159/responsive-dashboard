@@ -1,8 +1,7 @@
 part of'all_expenses_item.dart';
 class _AllExpensesItemHeader extends StatelessWidget {
   final String image;
-  final bool isSelected;
-  const _AllExpensesItemHeader({required this.image,required this.isSelected});
+  const _AllExpensesItemHeader({required this.image});
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -17,7 +16,7 @@ class _AllExpensesItemHeader extends StatelessWidget {
                   shape: OvalBorder(),
                 ),
                 child: Center(
-                  child: CustomIcon(icon: image,color:isSelected?context.colorScheme.secondary:context.colorScheme.primary),
+                  child: CustomIcon(icon: image,color:context.colorScheme.secondary),
                 ),
               ),
             ),
@@ -28,7 +27,7 @@ class _AllExpensesItemHeader extends StatelessWidget {
           angle: -1.57079633 * 2,
           child: Icon(
             Icons.arrow_back_ios_new_outlined,
-            color:isSelected?context.colorScheme.secondary:context.colorScheme.primary ,
+            color:context.colorScheme.secondary ,
           ),
         ),
       ],

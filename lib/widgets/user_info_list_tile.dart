@@ -1,4 +1,3 @@
-import 'package:dashboard/extension/context_extension.dart';
 import 'package:dashboard/models/user_info_model.dart';
 import 'package:dashboard/utils/app_text_styles.dart';
 import 'package:dashboard/widgets/custom_icon.dart';
@@ -10,7 +9,7 @@ class UserInfoListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0,
-      color:context.colorScheme.onBackground,
+      color:Colors.grey.withOpacity(0.1),
       child: Center(
         child: ListTile(
           leading:CustomIcon(icon: user.image),

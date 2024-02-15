@@ -1,8 +1,7 @@
 part of'all_expenses_item.dart';
 class _InActiveAllExpensesItem extends StatelessWidget {
-  final bool isSelected;
   final AllExpensesItemModel itemModel;
-  const _InActiveAllExpensesItem(this.itemModel, this.isSelected);
+  const _InActiveAllExpensesItem(this.itemModel);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +16,7 @@ class _InActiveAllExpensesItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _AllExpensesItemHeader(image: itemModel.image, isSelected: isSelected,),
+          _AllExpensesItemHeader(image: itemModel.image,),
           const SizedBox(
             height: 34,
           ),
@@ -26,7 +25,7 @@ class _InActiveAllExpensesItem extends StatelessWidget {
             child: Text(
               itemModel.title,
               style: AppStyles.styleMedium16(context).copyWith(
-                color: context.colorScheme.primary,
+                color: context.colorScheme.secondary,
               ),
             ),
           ),
@@ -38,7 +37,7 @@ class _InActiveAllExpensesItem extends StatelessWidget {
             child: Text(
               itemModel.date,
               style: AppStyles.styleRegular14(context).copyWith(
-                color: context.colorScheme.primary
+                color: Colors.grey
               ),
             ),
           ),
@@ -50,7 +49,7 @@ class _InActiveAllExpensesItem extends StatelessWidget {
             child: Text(
               itemModel.price,
               style: AppStyles.styleSemiBold24(context).copyWith(
-                color: context.colorScheme.primary
+                color: context.colorScheme.secondary
               ),
             ),
           ),
@@ -60,9 +59,8 @@ class _InActiveAllExpensesItem extends StatelessWidget {
   }
 }
 class _ActiveAllExpensesItem extends StatelessWidget {
-  final bool isSelected;
   final AllExpensesItemModel itemModel;
-  const _ActiveAllExpensesItem(this.itemModel, this.isSelected);
+  const _ActiveAllExpensesItem(this.itemModel);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -77,7 +75,7 @@ class _ActiveAllExpensesItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _AllExpensesItemHeader(image: itemModel.image,isSelected: isSelected),
+          _AllExpensesItemHeader(image: itemModel.image),
           const SizedBox(
             height: 34,
           ),
