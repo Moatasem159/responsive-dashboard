@@ -1,14 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:dashboard/utils/app_assets.dart';
-import 'package:dashboard/models/all_expenses_item_model.dart';
-import 'package:dashboard/widgets/all_expenses_widgets/all_expenses_item_widgets/all_expenses_item.dart';
-class AllExpensesItemsListView extends StatefulWidget {
-  const AllExpensesItemsListView({super.key});
+part of'all_expenses.dart';
+class _AllExpensesItemsListView extends StatefulWidget {
+  const _AllExpensesItemsListView();
   @override
-  State<AllExpensesItemsListView> createState() =>
+  State<_AllExpensesItemsListView> createState() =>
       _AllExpensesItemsListViewState();
 }
-class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
+class _AllExpensesItemsListViewState extends State<_AllExpensesItemsListView> {
   final List<AllExpensesItemModel>items = [
     const AllExpensesItemModel(
         image: Assets.balance,

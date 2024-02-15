@@ -1,5 +1,6 @@
-import 'package:dashboard/widgets/card_widgets/custom_dots_widgets/custom_dot.dart';
+import 'package:dashboard/extension/context_extension.dart';
 import 'package:flutter/material.dart';
+part 'custom_dot.dart';
 class DotsIndicator extends StatelessWidget {
   const DotsIndicator({super.key, required this.currentPageIndex});
   final int currentPageIndex;
@@ -10,7 +11,7 @@ class DotsIndicator extends StatelessWidget {
         3,
         (index) => Padding(
           padding: const EdgeInsets.only(right: 6),
-          child: CustomDotIndicator(isActive: index == currentPageIndex),
+          child: _CustomDotIndicator(index == currentPageIndex),
         ),
       ),
     );

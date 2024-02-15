@@ -9,18 +9,26 @@ class UserInfoListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0,
-      color:Colors.grey.withOpacity(0.1),
+      color: Colors.grey.withOpacity(0.1),
       child: Center(
         child: ListTile(
-          leading:CustomIcon(icon: user.image),
+          leading: CustomIcon(icon: user.image),
           title: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: AlignmentDirectional.centerStart,
-              child: Text(user.title,style: AppStyles.styleSemiBold16(context))),
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              user.title,
+              style: AppStyles.styleSemiBold16(context),
+            ),
+          ),
           subtitle: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: AlignmentDirectional.centerStart,
-              child: Text(user.subTitle,style: AppStyles.styleRegular12(context))),
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              user.subTitle,
+              style: AppStyles.styleRegular12(context),
+            ),
+          ),
         ),
       ),
     );

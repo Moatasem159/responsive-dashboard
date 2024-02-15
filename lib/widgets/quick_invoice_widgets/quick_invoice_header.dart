@@ -1,10 +1,6 @@
-import 'package:dashboard/extension/context_extension.dart';
-import 'package:dashboard/utils/app_text_styles.dart';
-import 'package:flutter/material.dart';
-
-class QuickInvoiceHeader extends StatelessWidget {
-  const QuickInvoiceHeader({super.key});
-
+part of'quick_invoice.dart';
+class _QuickInvoiceHeader extends StatelessWidget {
+  const _QuickInvoiceHeader();
   @override
   Widget build(BuildContext context) {
     return Row(

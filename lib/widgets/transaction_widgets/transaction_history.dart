@@ -1,6 +1,9 @@
-import 'package:dashboard/widgets/transaction_widgets/transaction_history_header.dart';
-import 'package:dashboard/widgets/transaction_widgets/transaction_history_list_view.dart';
+import 'package:dashboard/models/transaction_model.dart';
+import 'package:dashboard/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
+part 'transaction_history_header.dart';
+part 'transaction_item.dart';
+part 'transaction_history_list_view.dart';
 class TransactionHistory extends StatelessWidget {
   const TransactionHistory({super.key});
   @override
@@ -8,7 +11,7 @@ class TransactionHistory extends StatelessWidget {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TransactionHistoryHeader(),
+        _TransactionHistoryHeader(),
         SizedBox(
           height: 20,
         ),
@@ -25,7 +28,7 @@ class TransactionHistory extends StatelessWidget {
         SizedBox(
           height: 16,
         ),
-        TransactionHistoryListView(),
+        _TransactionHistoryListView(),
       ],
     );
   }

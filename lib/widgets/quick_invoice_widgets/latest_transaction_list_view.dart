@@ -1,9 +1,6 @@
-import 'package:dashboard/models/user_info_model.dart';
-import 'package:dashboard/utils/app_assets.dart';
-import 'package:dashboard/widgets/user_info_list_tile.dart';
-import 'package:flutter/material.dart';
-class LatestTransactionListView extends StatelessWidget {
-  const LatestTransactionListView({super.key});
+part of'quick_invoice.dart';
+class _LatestTransactionListView extends StatelessWidget {
+  const _LatestTransactionListView();
 
   static const List<UserInfoModel>items = [
     UserInfoModel(

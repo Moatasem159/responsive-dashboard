@@ -1,10 +1,6 @@
-import 'package:dashboard/models/transaction_model.dart';
-import 'package:dashboard/widgets/transaction_widgets/transaction_item.dart';
-import 'package:flutter/material.dart';
-
-class TransactionHistoryListView extends StatelessWidget {
-  const TransactionHistoryListView({super.key});
-
+part of'transaction_history.dart';
+class _TransactionHistoryListView extends StatelessWidget {
+  const _TransactionHistoryListView();
   static const List<TransactionModel>items = [
     TransactionModel(
         title: 'Cash Withdrawal',
@@ -25,7 +21,7 @@ class TransactionHistoryListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: items.map((e) => TransactionItem(transactionModel: e)).toList(),
+      children: items.map((e) => _TransactionItem(e)).toList(),
     );
 
   }

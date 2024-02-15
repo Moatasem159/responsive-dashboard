@@ -1,10 +1,8 @@
-import 'package:dashboard/models/transaction_model.dart';
-import 'package:dashboard/utils/app_text_styles.dart';
-import 'package:flutter/material.dart';
-class TransactionItem extends StatelessWidget {
-  const TransactionItem({super.key, required this.transactionModel});
-
+part of'transaction_history.dart';
+class _TransactionItem extends StatelessWidget {
   final TransactionModel transactionModel;
+  const _TransactionItem(this.transactionModel);
+
   @override
   Widget build(BuildContext context) {
     return Card(

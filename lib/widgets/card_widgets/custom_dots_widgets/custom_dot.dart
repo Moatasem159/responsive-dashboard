@@ -1,8 +1,7 @@
-import 'package:dashboard/extension/context_extension.dart';
-import 'package:flutter/material.dart';
-class CustomDotIndicator extends StatelessWidget {
-  const CustomDotIndicator({super.key, required this.isActive});
+part of'dots_indicator.dart';
+class _CustomDotIndicator extends StatelessWidget {
   final bool isActive;
+  const _CustomDotIndicator(this.isActive);
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(

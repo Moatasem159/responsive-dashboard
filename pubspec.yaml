@@ -7,10 +7,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_svg: ^2.0.9
-  expandable_page_view: ^1.0.17
   fl_chart: ^0.66.2
+  flutter_svg: ^2.0.9
+  flutter_bloc: ^8.1.4
   cupertino_icons: ^1.0.6
+  expandable_page_view: ^1.0.17
 dev_dependencies:
   flutter_test:
     sdk: flutter

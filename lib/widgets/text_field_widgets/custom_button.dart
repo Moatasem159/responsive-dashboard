@@ -2,13 +2,8 @@ import 'package:dashboard/extension/context_extension.dart';
 import 'package:dashboard/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
-  const CustomButton({
-    super.key, required this.isOutLine,
-
-    // this.backgroundColor, this.textColor
-  });
   final bool isOutLine;
-  // final Color? backgroundColor, textColor;
+  const CustomButton({super.key, required this.isOutLine});
   @override
   Widget build(BuildContext context) {
     return SizedBox(

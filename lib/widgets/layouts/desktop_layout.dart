@@ -22,31 +22,37 @@ class DesktopLayout extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                        flex: 2,
-                        child: Padding(
-                          padding: EdgeInsets.only(top: 40),
-                          child: AllExpensesAndQuickInvoiceSection(),
-                        )
+                      flex: 2,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 40),
+                        child: AllExpensesAndQuickInvoiceSection(),
+                      ),
                     ),
                     SizedBox(
                       width: 24,
                     ),
-                    Expanded(child: Padding(
-                      padding: EdgeInsets.only(top: 40,right: 24),
-                      child: Column(
-                        children: [
-                          MyCardsAndTransactionHistorySection(),
-                          SizedBox(height: 24,),
-                          Expanded(child: IncomeSection()),
-                          SizedBox(height: 24,),
-                        ],
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 40, right: 24),
+                        child: Column(
+                          children: [
+                            MyCardsAndTransactionHistorySection(),
+                            SizedBox(
+                              height: 24,
+                            ),
+                            Expanded(child: IncomeSection()),
+                            SizedBox(
+                              height: 24,
+                            ),
+                          ],
+                        ),
                       ),
-                    )),
+                    ),
                   ],
                 ),
               )
             ],
-          )
+          ),
         )
       ],
     );

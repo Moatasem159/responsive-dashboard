@@ -1,9 +1,6 @@
-import 'package:dashboard/widgets/text_field_widgets/custom_button.dart';
-import 'package:dashboard/widgets/text_field_widgets/title_text_field.dart';
-import 'package:flutter/material.dart';
-class QuickInvoiceForm extends StatelessWidget {
-  const QuickInvoiceForm({super.key});
-
+part of'quick_invoice.dart';
+class _QuickInvoiceForm extends StatelessWidget {
+  const _QuickInvoiceForm();
   @override
   Widget build(BuildContext context) {
     return const Column(

@@ -1,8 +1,6 @@
-import 'package:dashboard/utils/app_text_styles.dart';
-import 'package:dashboard/widgets/range_options.dart';
-import 'package:flutter/material.dart';
-class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({super.key});
+part of'all_expenses.dart';
+class _AllExpensesHeader extends StatelessWidget {
+  const _AllExpensesHeader();
   @override
   Widget build(BuildContext context) {
     return Row(

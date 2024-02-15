@@ -1,7 +1,6 @@
-import 'package:dashboard/utils/app_text_styles.dart';
-import 'package:flutter/material.dart';
-class TransactionHistoryHeader extends StatelessWidget {
-  const TransactionHistoryHeader({super.key});
+part of'transaction_history.dart';
+class _TransactionHistoryHeader extends StatelessWidget {
+  const _TransactionHistoryHeader();
   @override
   Widget build(BuildContext context) {
     return Row(
